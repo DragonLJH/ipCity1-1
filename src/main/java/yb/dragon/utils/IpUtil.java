@@ -15,7 +15,7 @@ public class IpUtil {
 	public String getCityInfo(String ip) throws IOException {
 
 		// db
-		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("static/ip2region.db");
+		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("static/newIpdb/ip2region.db");
 		byte[] dbsj = IOUtils.toByteArray(inputStream);
 
 		// 查询算法
